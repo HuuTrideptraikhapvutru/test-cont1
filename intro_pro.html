@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hữu Trí - H_Tee Shop</title>
+    <link rel="stylesheet" href="./themify-icons-font (1)/themify-icons/themify-icons.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .clear{
+            clear: both;
+        }
+        
+        .home{
+            padding: 0 100px;
+        }
+        
+        #header{
+            background-color:black;
+            height: 58px;
+            font-style: bold;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 5;
+        }
+        
+        #nav li a{
+            padding: 0 24px; 
+            line-height: 58px;
+            text-decoration: none;
+            color:bisque;
+            position: relative;
+            display: block;
+        }
+        
+        #nav li:hover{
+            background-color:rgb(17, 129, 133);
+            transition: all .5s;
+        }
+        
+        
+        #nav >li{
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+        }
+        
+        #nav li:hover .subnav{
+            display:block;
+        }
+        
+        .subnav{
+            box-shadow: 0 0 10px  rgba(0,0,.5);
+        }
+        
+        .subnav li{
+            list-style-type: none;
+            border-bottom: 1px solid gray;
+        }
+        
+        #nav .subnav {
+            display:none;
+            position: absolute;
+            background-color: black;
+        }
+        
+        .kc{
+            margin: 0 15px;
+        }
+        
+        .fll{
+            float: left;
+        }
+        
+        .flr{
+            float: right;
+            line-height: 58px;
+            font-size:  18px;
+            margin-right: 10px;
+        }
+        
+        .flr a{
+            text-decoration: none;
+            color: white;
+        }
+
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .khung:hover {
+            transform: translateY(-20px);
+          }
+
+        .khung{
+            width: 578px;
+            border: 4px solid rgb(6, 165, 104);
+            margin: auto;
+            display: flex;
+            height: 290px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            margin-top: 150px;
+            box-shadow: 0px 0px 50px 10px;
+            background-color: whitesmoke;
+        }
+
+        .profile{
+            margin-left: 10px;
+        }
+
+        .img{
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+
+        .intro{
+            margin-top: 25px;
+            margin-left: 60px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .icon{
+            font-size: 30px;
+            margin-left: 60px;
+        }
+
+        .ic{
+            margin: 0 10px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        @media screen and (max-width: 740px) {
+            .khung{
+                flex-direction:column-reverse;
+                display: block;
+                height: 550px;
+                width: 300px;
+                background: #2cb5a0;
+                border-radius: 15px;
+                border:1px solid #2cb5a0;
+                margin-top: 100px;
+            }
+
+            .profile{
+                margin: 0 25px;
+            }
+            .nav{
+                display: none;
+            }
+
+            h2{
+                margin-left: 22px;
+            }
+
+            .intro{
+            margin-top: 0;
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: beige;
+            }
+
+            .icon{
+            font-size: 30px;
+            margin-left: 0;
+        }
+
+            .img{
+                border-radius: 50%;
+            }
+        
+        
+        .intro{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        } 
+        a{
+            color: white;
+        }
+    }
+        body{
+            background-color: gray;
+        }
+
+
+
+
+
+
+    @media only screen and (min-width:740px) and (max-width:1023px) {
+        .flr {
+            display: none !important;
+        }
+    
+        .hotline {
+            display: none !important;
+        }
+
+        .home {
+            padding: 0 50px;
+        }
+    
+        .kc{
+            margin: 0 8px;
+        }
+    }
+
+
+    @media screen and (max-width:739px) {
+        .flr{
+            display: none !important;
+        }
+    
+        .home {
+            padding: 0 15px;
+        }
+    
+        .hotline {
+            display: none !important;
+        }
+    
+        .kc{
+            margin: 0;
+        }
+    
+        .more{
+            display: none !important;
+        }
+    }
+      
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div class="fll">
+        <ul id="nav">
+            <li class="home"><a href="shopHTee_pro.html"><i class="ti-home"></i> Home</a></li>
+            <li class="kc wv"><a href="WeightVest.html">Weight Vests</a></li>
+            <li class="kc"><a href="pro.html">Shop</a>
+                <ul class="subnav">
+                    <li><a href="ShopTankTop.html">Áo tank top</a></li>
+                    <li><a href="ShopParallettes.html">PARALLETTES</a></li>
+                    <li><a href="ShopBangQuanCoTay.html">Băng quấn cổ tay</a></li>
+                    <li><a href="ShopDayTroLuc.html">Dây Trợ Lực</a></li>
+                    <li><a href="ShopDayNhay.html">Dây nhảy</a></li>
+                    <li><a href="ShopDaiDeoTa.html">Đai đeo tạ</a></li>
+    
+                </ul>
+            </li>
+    
+            <li class="kc hotline"><a href="">Hotline</a>
+                <ul class="subnav">
+                    <li><a href="">099 679 6879</a></li>
+                    <li><a href="">090 123 6789</a></li>
+                </ul>
+            </li>
+    
+            <li class="kc more"><a href="">More <i class="ti-angle-down"></i></a>
+                <ul class="subnav">
+                    <li><a href="https://fitcenter.vn/gym-la-gi/" target="_blank">Gym</a></li>
+                    <li><a href="https://open.spotify.com/album/7LxBrkZXrZZTLHRiDEJfqx" target="_blank">Music</a></li>
+                    <li><a href="https://chrisheria.com/blogs/news" target="_blank">Vlog of Heria</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+        </div>
+    
+        <div class="flr">
+            <a href="LogIn.html">Register | Log In</a>
+        </div>
+    
+        <div class="clear"></div>
+    </div>
+
+
+
+
+    <div class="khung">
+
+        <div class="profile">
+            <a href=""></a> <img src="ht.jpg" alt="ảnh của Hữu Trí" class="img">
+        </div>
+
+        <div class="para">
+            
+            <div class="intro">
+            <p>
+                Nguyễn Hữu Trí <br/>
+                20012 10979 <br/>
+                12DHTH05 <br/>
+                Sì Gòn <br/>
+                Đồ án: Web bán dụng cụ tập luyện Calisthesis / Street Workout
+                
+            </p>
+        </div>
+
+        <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=100012833327149" target="_blank"> <i class="ti-instagram ic"></i> </a>
+            <a href="https://www.facebook.com/profile.php?id=100012833327149" target="_blank"> <i class="ti-facebook ic"></i> </a>
+            <a href="https://www.google.com/intl/vi/gmail/about/" target="_blank"> <i class="ti-email ic"></i> </a>
+            <a href="https://www.youtube.com/" target="_blank"> <i class="ti-youtube ic"></i> </a>
+        </div>
+
+        </div>
+        
+    </div>
+
+
+    
+    
+
+
+</body>
+</html>
